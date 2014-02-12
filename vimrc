@@ -100,3 +100,6 @@ endif
 set splitright
 command -nargs=* -complete=help Help vertical belowright help <args>
 set wildmenu
+set clipboard=unnamed
+set backup      " keep a backup file
+set backupdir=$HOME/.vimbak
