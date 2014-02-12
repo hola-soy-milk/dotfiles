@@ -102,4 +102,5 @@ command -nargs=* -complete=help Help vertical belowright help <args>
 set wildmenu
 set clipboard=unnamed
 set backup      " keep a backup file
+" Set up backup folder
 set backupdir=$HOME/.vimbak
