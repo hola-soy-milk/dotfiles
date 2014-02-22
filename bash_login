@@ -12,5 +12,4 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 alias la='ls -A'
 alias ll='ls -l'
-alias vimall='vim -p **/*'
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"

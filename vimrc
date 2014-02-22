@@ -109,3 +109,7 @@ call pathogen#infect()
 map <F2> :NERDTreeToggle<CR>;
 runtime macros/matchit.vim
 :set number
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
