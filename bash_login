@@ -14,3 +14,10 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 alias la='ls -A'
 alias ll='ls -l'
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+
+touch_and_open() {
+  touch $1
+  open $1
+}
+
+alias tao=touch_and_open
