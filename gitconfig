@@ -1,0 +1,4 @@
+[alias]
+  st = status -sb
+[push]
+  default = matching
