@@ -1,0 +1,12 @@
+'editor':
+  'fontSize': 13
+  'fontFamily': 'menlo'
+'core': {}
+'exception-reporting':
+  'userId': 'a5b81f1c-3eea-dd5b-5c2e-0c8b8b104b57'
+'release-notes':
+  'viewedVersion': '0.94.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': 'dab491e019f579422dcac20487b4874879bfd166'
