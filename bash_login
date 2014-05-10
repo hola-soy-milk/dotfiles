@@ -6,6 +6,7 @@ export LANG="en_GB.UTF-8"
 export PATH=${PATH}:$HOME/gsutil
 export NODE_PATH=$(npm config get prefix)/lib/node_modules
 
+git config --global core.editor "atom --wait"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 export CLICOLOR=1
 
