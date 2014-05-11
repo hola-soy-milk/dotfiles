@@ -1,6 +1,8 @@
 'editor':
   'fontSize': 13
   'fontFamily': 'menlo'
+  'softTabs': false
+  'showIndentGuide': true
 'core': {}
 'exception-reporting':
   'userId': 'a5b81f1c-3eea-dd5b-5c2e-0c8b8b104b57'
