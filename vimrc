@@ -114,7 +114,7 @@ set shiftwidth=2
 set softtabstop=2
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
- 
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 set expandtab
@@ -123,3 +123,9 @@ set expandtab
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
+" Save all swap files in a central location so they don't clutter up
+" the working directory
+if isdirectory($HOME . '/.vim/swap') == 0
+  :silent !mkdir -p ~/.vim/swap >/dev/null 2>&1
+endif
+set directory=~/.vim/swap
