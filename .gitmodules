@@ -34,9 +34,3 @@
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler.git
-[submodule "atom/packages/cucumber"]
-	path = atom/packages/cucumber
-	url = https://github.com/edda/cucumber-atom.git
-[submodule "atom/packages/ruby-test"]
-	path = atom/packages/ruby-test
-	url = https://github.com/moxley/atom-ruby-test.git
