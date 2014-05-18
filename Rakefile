@@ -1,8 +1,8 @@
 task :default => [:install]
 
+@packages = %w(ruby-test, cucumber, vim-mode, autocomplete-snippets, autocomplete-plus)
+
 desc "Install Atom packages"
 task :install do
-  system('apm install ruby-test')
-  system('apm install cucumber')
-  system('apm install vim-mode')
+  @packages.each {|pkg| system("apm install #{pkg}")}
 end
