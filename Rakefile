@@ -1,6 +1,6 @@
 task :default => [:install]
 
-@packages = %w(ruby-test cucumber vim-mode autocomplete-snippets autocomplete-plus autocomplete-paths)
+@packages = %w(ruby-test language-ruby-on-rails cucumber vim-mode autocomplete-snippets autocomplete-plus autocomplete-paths)
 
 desc "Install Atom packages"
 task :install do
