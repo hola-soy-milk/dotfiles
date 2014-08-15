@@ -116,6 +116,9 @@ set softtabstop=2
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
 
+set guifont=Source\ Code\ Pro\ for\ Powerline "make sure to escape the spaces in the name properly
+
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 set expandtab
@@ -131,6 +134,21 @@ if isdirectory($HOME . '/.vim/swap') == 0
 endif
 set directory=~/.vim/swap
 
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+
+
+if has("gui_running")
+   let s:uname = system("uname")
+   if s:uname == "Darwin\n"
+      set guifont=Inconsolata\ for\ Powerline:h15
+   endif
+endif
 
 
 "Use TAB to complete when typing words, else inserts TABs as usual.
