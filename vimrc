@@ -32,6 +32,8 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
+set cursorline "highlight cursor line
+
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
 
@@ -46,6 +48,7 @@ inoremap <C-U> <C-G>u<C-U>
 if has('mouse')
   set mouse=a
 endif
+syntax enable
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -169,3 +172,11 @@ function! Tab_Or_Complete()
 endfunction
 :inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 :set dictionary="/usr/dict/words"
+
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+
+" Move vertically visually
+nnoremap j gj
+nnoremap k gk
