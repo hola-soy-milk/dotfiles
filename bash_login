@@ -21,6 +21,12 @@ touch_and_open() {
 
 alias tao=touch_and_open
 
+line_count() {
+  find . -name '*.rb' | xargs wc -l
+}
+
+alias lc=line_count
+
 # From Zach Holman's talk "Git and GitHub Secrets:
 # http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets
 git config --global alias.st 'status -sb --ignore-submodules=untracked'
