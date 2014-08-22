@@ -180,3 +180,6 @@ nnoremap E $
 " Move vertically visually
 nnoremap j gj
 nnoremap k gk
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
