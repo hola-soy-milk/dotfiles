@@ -123,7 +123,7 @@ set guifont=Source\ Code\ Pro\ for\ Powerline "make sure to escape the spaces in
 
 
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
+" set listchars=tab:▸\ ,eol:¬
 set expandtab
 
 "Invisible character colors
