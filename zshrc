@@ -1,6 +1,8 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
 
+export PATH="$PATH:/Users/ramonh/.rvm/gems/ruby-2.1.0/bin:/Users/ramonh/.rvm/gems/ruby-2.1.0@global/bin:/Users/ramonh/.rvm/rubies/ruby-2.1.0/bin:/Users/ramonh/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/ramonh/gsutil:/Users/ramonh/gsutil"
+# Path to your oh-my-zsh installation.
+ export ZSH=$HOME/.oh-my-zsh
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -52,7 +54,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/ramonh/.rvm/gems/ruby-2.1.0/bin:/Users/ramonh/.rvm/gems/ruby-2.1.0@global/bin:/Users/ramonh/.rvm/rubies/ruby-2.1.0/bin:/Users/ramonh/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/ramonh/gsutil:/Users/ramonh/gsutil"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -80,3 +81,5 @@ export PATH="/Users/ramonh/.rvm/gems/ruby-2.1.0/bin:/Users/ramonh/.rvm/gems/ruby
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 DEFAULT_USER=`whoami`
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
