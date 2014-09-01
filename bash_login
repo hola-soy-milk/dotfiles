@@ -1,7 +1,6 @@
 export EDITOR="vim"
 export CVSEDITOR="vim"
 export SVN_EDITOR="vim"
-export PATH=${PATH}:$HOME/gsutil
 export NODE_PATH=$(npm config get prefix)/lib/node_modules
 
 # git config --global core.editor "atom --wait"
@@ -45,3 +44,5 @@ fi
 if [ -f ~/git-completion.bash ]; then
   . ~/git-completion.bash
 fi
+
+source ~/.profile
