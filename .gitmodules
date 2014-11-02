@@ -46,3 +46,6 @@
 [submodule "bundle/rust.vim"]
 	path = bundle/rust.vim
 	url = https://github.com/wting/rust.vim.git
+[submodule "bundle/CoffeeTags"]
+	path = bundle/CoffeeTags
+	url = git@github.com:lukaszkorecki/CoffeeTags.git
