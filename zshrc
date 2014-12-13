@@ -10,6 +10,10 @@ export PATH="$PATH:/Users/ramonh/.rvm/gems/ruby-2.1.0/bin:/Users/ramonh/.rvm/gem
 ZSH_THEME="agnoster"
 #ZSH_THEME='robbyrussell'
 
+source /usr/local/Cellar/todo-txt/2.10/etc/bash_completion.d/todo_completion complete -F _todo t
+
+alias todo='/usr/local/Cellar/todo-txt/2.10/bin/todo.sh -d $HOME/dropbox/todo/todo.cfg'
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -81,6 +85,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 DEFAULT_USER=`whoami`
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-alias todo='todo.sh'
