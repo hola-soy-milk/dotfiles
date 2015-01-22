@@ -148,7 +148,7 @@ set termencoding=utf-8
 
 if has("gui_running")
 elseif &t_Co == 256
-      colorscheme Tomorrow-Night-Bright
+      colorscheme Vividchalk
    let s:uname = system("uname")
    if s:uname == "Darwin\n"
       set guifont=Inconsolata\ for\ Powerline:h15
