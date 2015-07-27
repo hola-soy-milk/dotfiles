@@ -32,6 +32,8 @@ git config --global alias.st 'status -sb --ignore-submodules=untracked'
 
 git config --global alias.co 'checkout'
 
+git config --global alias.yolopush 'push --force'
+
 # Use matching git pushing method
 git config --global push.default matching
 
