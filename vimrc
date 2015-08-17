@@ -191,3 +191,6 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " mkdir when editing new file
 au BufNewFile * :exe ': !mkdir -p ' . escape(fnamemodify(bufname('%'),':p:h'),'#% \\')
+
+" Automatically remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
