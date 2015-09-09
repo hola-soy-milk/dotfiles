@@ -10,10 +10,6 @@ export PATH="$PATH:/Users/ramonh/.rvm/gems/ruby-2.1.0/bin:/Users/ramonh/.rvm/gem
 ZSH_THEME="agnoster"
 #ZSH_THEME='robbyrussell'
 
-source /usr/local/Cellar/todo-txt/2.10/etc/bash_completion.d/todo_completion complete -F _todo t
-
-alias todo='/usr/local/Cellar/todo-txt/2.10/bin/todo.sh -d $HOME/dropbox/todo/todo.cfg'
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -52,7 +48,7 @@ alias todo='/usr/local/Cellar/todo-txt/2.10/bin/todo.sh -d $HOME/dropbox/todo/to
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby brew cp tmux tmuxinator bundler rake rvm )
+plugins=(git rails ruby brew cp tmux tmuxinator bundler rake rvm coffee gem git-extras jsontools node osx sudo)
 
 source $ZSH/oh-my-zsh.sh
 
