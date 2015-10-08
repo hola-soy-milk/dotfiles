@@ -194,3 +194,6 @@ au BufNewFile * :exe ': !mkdir -p ' . escape(fnamemodify(bufname('%'),':p:h'),'#
 
 " Automatically remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Ignore directories in ctrl-P
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|doc'
