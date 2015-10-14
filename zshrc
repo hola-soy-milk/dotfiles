@@ -86,3 +86,5 @@ export PATH="$PATH:$HOME/android-sdk/platform-tools" # Add RVM to PATH for scrip
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export JDK_HOME=$(/usr/libexec/java_home)
+export NVM_DIR=~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
