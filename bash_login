@@ -32,7 +32,15 @@ git config --global alias.st 'status -sb --ignore-submodules=untracked'
 
 git config --global alias.co 'checkout'
 
+git config --global alias.ci 'commit'
+
+git config --global alias.cob 'checkout -b'
+
+git config --global alias.rmb '!sh -c 'git branch -D $1 && git push origin :$1' -'
+
 git config --global alias.yolopush 'push --force'
+
+git config --global alias.cleanup '!git remote prune origin && git gc && git clean -dfx && git stash clear'
 
 # Use matching git pushing method
 git config --global push.default matching
