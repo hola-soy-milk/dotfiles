@@ -196,4 +196,4 @@ au BufNewFile * :exe ': !mkdir -p ' . escape(fnamemodify(bufname('%'),':p:h'),'#
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Ignore directories in ctrl-P
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|doc'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|doc|tags'
