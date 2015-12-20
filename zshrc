@@ -80,6 +80,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 DEFAULT_USER=`whoami`
+export EDITOR="vim"
+export SHELL="zsh"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/android-sdk/platform-tools" # Add RVM to PATH for scripting
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
