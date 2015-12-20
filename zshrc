@@ -1,4 +1,4 @@
-export PATH="$PATH:/Users/ramonh/.rvm/gems/ruby-2.1.0/bin:/Users/ramonh/.rvm/gems/ruby-2.1.0@global/bin:/Users/ramonh/.rvm/rubies/ruby-2.1.0/bin:/Users/ramonh/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/ramonh/gsutil:/Users/ramonh/gsutil"
+export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/ramonh/gsutil:/Users/ramonh/gsutil"
 # Path to your oh-my-zsh installation.
  export ZSH=$HOME/.oh-my-zsh
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
