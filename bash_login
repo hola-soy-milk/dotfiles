@@ -26,27 +26,6 @@ line_count() {
 
 alias lc=line_count
 
-# From Zach Holman's talk "Git and GitHub Secrets:
-# http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets
-git config --global alias.st 'status -sb --ignore-submodules=untracked'
-
-git config --global alias.co 'checkout'
-
-git config --global alias.ci 'commit'
-
-git config --global alias.cob 'checkout -b'
-
-git config --global alias.rmb '!sh -c 'git branch -D $1 && git push origin :$1' -'
-
-git config --global alias.yolopush 'push --force'
-
-git config --global alias.cleanup '!git remote prune origin && git gc && git clean -dfx && git stash clear'
-
-# Use matching git pushing method
-git config --global push.default matching
-
-git config --global alias.lg "log --color --graph --decorate --oneline"
-
 if [ -f /opt/local/etc/bash_completion ]; then
     . /opt/local/etc/bash_completion
 fi

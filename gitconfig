@@ -1,0 +1,19 @@
+[alias]
+	st = status -sb --ignore-submodules=untracked
+	lg = log --color --graph --decorate --oneline
+	co = checkout
+	yolopush = push --force
+	ci = commit
+	cob = checkout -b
+	pr = "!f() { git fetch origin pull/$1/head:pr-$1 && git checkout pr-$1; }; f"
+	cleanup = !git remote prune origin && git gc && git clean -dfx && git stash clear
+[push]
+	default = matching
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+[user]
+	name = Ramon Huidobro
+	email = ramon.martin.huidobro@gmail.com
+[github]
+	user = ramonh
