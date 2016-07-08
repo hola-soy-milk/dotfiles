@@ -147,16 +147,6 @@ set term=xterm-256color
 set termencoding=utf-8
 
 
-if has("gui_running")
-elseif &t_Co == 256
-      set background=dark
-      colorscheme sol
-   let s:uname = system("uname")
-   if s:uname == "Darwin\n"
-      set guifont=Inconsolata\ for\ Powerline:h15
-  endif
-endif
-
 let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
@@ -198,3 +188,15 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Ignore directories in ctrl-P
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|doc\|tags'
+
+if has("gui_running")
+elseif &t_Co == 256
+  syntax enable
+  set background=dark
+  colorscheme solarized
+   let s:uname = system("uname")
+   if s:uname == "Darwin\n"
+      set guifont=Inconsolata\ for\ Powerline:h15
+  endif
+endif
+
