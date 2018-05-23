@@ -3,6 +3,10 @@
 	lg = log --color --graph --decorate --oneline
 	co = checkout
 	yolopush = push --force
+  d = diff --ignore-all-space
+  dc = diff --cached --ignore-all-space
+  wd = diff --word-diff="color"
+  wdc = diff --word-diff="color" --cached
 	ci = commit
 	cob = checkout -b
 	pr = "!f() { git fetch origin pull/$1/head:pr-$1 && git checkout pr-$1; }; f"
