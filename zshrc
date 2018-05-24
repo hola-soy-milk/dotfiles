@@ -80,17 +80,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 DEFAULT_USER=`whoami`
-alias be = 'bundle exec'
-alias b = 'bundle'
-zstyle -e ':completion::*:hosts' hosts
+alias be='bundle exec'
+alias b='bundle'
+zstyle -e ':completion::*:hosts' hosts \
   'reply=($(sed -e "/^#/d" -e "s/ .*\$//" -e "s/,/ /g" /etc/ssh_known_hosts(N) \
     ~/.ssh/known_hosts(N) 2>/dev/null | \
     xargs) $(grep \^Host ~/.ssh/config(N) | \
     cut -f2 -d\  2>/dev/null | xargs))'
 if type rbenv > /dev/null; then
-    RPROMPT= "%F{white}\$(rbenv version-name)%f $RPROMPT";
+    RPROMPT="%F{white}\$(rbenv version-name)%f $RPROMPT";
 fi
-alias '..' = 'cd ..'
+alias '..'='cd ..'
 # The -g makes them global aliases, so they're expaned even inside commands
 alias  -g ...= '../..'
 alias  -g ....= '../../..'
