@@ -118,3 +118,4 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export JDK_HOME=$(/usr/libexec/java_home)
 export NVM_DIR=~/.nvm
   source $(brew --prefix nvm)/nvm.sh
+eval "$(rbenv init -)"
