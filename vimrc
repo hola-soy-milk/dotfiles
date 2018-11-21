@@ -1,4 +1,5 @@
 set re=1
+
 " The Silver Searcher
 if executable('ag')
   " Use ag over grep
@@ -62,7 +63,8 @@ inoremap <C-U> <C-G>u<C-U>
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
-  set mouse=a
+  set mouse=r
+  set clipboard=unnamedplus
 endif
 syntax enable
 
@@ -120,7 +122,6 @@ endif
 set splitright
 command -nargs=* -complete=help Help vertical belowright help <args>
 set wildmenu
-set clipboard=unnamed
 set backup      " keep a backup file
 " Set up backup folder
 set backupdir=$HOME/.vimbak
@@ -161,9 +162,6 @@ set fillchars+=stl:\ ,stlnc:\
 set term=xterm-256color
 set termencoding=utf-8
 
-
-let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
 "Use TAB to complete when typing words, else inserts TABs as usual.
 "Uses dictionary and source files to find matching words to complete.

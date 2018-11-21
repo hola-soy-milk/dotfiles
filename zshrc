@@ -7,6 +7,7 @@ export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/b
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
+
 #ZSH_THEME='robbyrussell'
 
 # Uncomment the following line to use case-sensitive completion.
@@ -87,6 +88,7 @@ zstyle -e ':completion::*:hosts' hosts \
     ~/.ssh/known_hosts(N) 2>/dev/null | \
     xargs) $(grep \^Host ~/.ssh/config(N) | \
     cut -f2 -d\  2>/dev/null | xargs))'
+export PATH="$HOME/.rbenv/bin:$PATH"
 if type rbenv > /dev/null; then
     RPROMPT="%F{white}\$(rbenv version-name)%f $RPROMPT";
 fi
@@ -114,8 +116,13 @@ export SHELL="zsh"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/android-sdk/platform-tools" # Add RVM to PATH for scripting
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
-export JAVA_HOME=$(/usr/libexec/java_home)
-export JDK_HOME=$(/usr/libexec/java_home)
-export NVM_DIR=~/.nvm
-  source $(brew --prefix nvm)/nvm.sh
+#export JAVA_HOME=$(/usr/libexec/java_home)
+#export JDK_HOME=$(/usr/libexec/java_home)
+#export NVM_DIR=~/.nvm
+  #source $(brew --prefix nvm)/nvm.sh
 eval "$(rbenv init -)"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
