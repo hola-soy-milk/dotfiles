@@ -1,4 +1,5 @@
 set re=1
+set guifont=Fira\ Code:h12
 " The Silver Searcher
 if executable('ag')
   " Use ag over grep
