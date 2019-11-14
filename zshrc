@@ -81,6 +81,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 DEFAULT_USER=`whoami`
+alias ssh='TERM=xterm-256color ssh'
 alias be='bundle exec'
 alias b='bundle'
 zstyle -e ':completion::*:hosts' hosts \
