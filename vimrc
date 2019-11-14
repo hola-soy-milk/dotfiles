@@ -204,15 +204,19 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Ignore directories in ctrl-P
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|doc\|tags'
+"let g:dracula_colorterm = 0
+"let g:dracula_italic = 0
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
 
-if has("gui_running")
-elseif &t_Co == 256
-  syntax enable
-  set background=dark
-  colorscheme solarized
-   let s:uname = system("uname")
-   if s:uname == "Darwin\n"
-      set guifont=Inconsolata\ for\ Powerline:h15
-  endif
+syntax enable
+set background=dark
+colorscheme dracula
+let s:uname = system("uname")
+if s:uname == "Darwin\n"
+  set guifont=Inconsolata\ for\ Powerline:h15
 endif
-
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+highlight Comment cterm=italic
