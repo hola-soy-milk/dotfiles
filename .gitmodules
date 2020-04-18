@@ -112,3 +112,9 @@
 [submodule "bundle/dracula"]
 	path = bundle/dracula
 	url = git@github.com:dracula/vim.git
+[submodule "bundle/vim-tsx"]
+	path = bundle/vim-tsx
+	url = git@github.com:ianks/vim-tsx.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/dense-analysis/ale.git
