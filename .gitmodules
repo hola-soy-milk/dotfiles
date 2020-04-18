@@ -118,3 +118,6 @@
 [submodule "bundle/vim-tsx"]
 	path = bundle/vim-tsx
 	url = git@github.com:ianks/vim-tsx.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/dense-analysis/ale.git
