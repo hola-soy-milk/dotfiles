@@ -1,7 +1,6 @@
 export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/ramonh/gsutil:/Users/ramonh/gsutil"
 # Path to your oh-my-zsh installation.
- export ZSH=$HOME/.oh-my-zsh
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -48,7 +47,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby brew cp tmux tmuxinator rake rvm coffee gem git-extras jsontools node osx sudo common-aliases)
+plugins=(git rails ruby cp tmux tmuxinator rake jsontools sudo common-aliases)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,19 +88,6 @@ zstyle -e ':completion::*:hosts' hosts \
     ~/.ssh/known_hosts(N) 2>/dev/null | \
     xargs) $(grep \^Host ~/.ssh/config(N) | \
     cut -f2 -d\  2>/dev/null | xargs))'
-export PATH="$HOME/.rbenv/bin:$PATH"
-if type rbenv > /dev/null; then
-    RPROMPT="%F{white}\$(rbenv version-name)%f $RPROMPT";
-fi
-alias '..'='cd ..'
-# The -g makes them global aliases, so they're expaned even inside commands
-alias  -g ...= '../..'
-alias  -g ....= '../../..'
-alias  -g .....= '../../../..'
-alias  -g ......= '../../../../..'
-alias  -g .......= '../../../../../..'
-# Aliases '-' to 'cd -'
-alias  -- -= 'cd -'
 fancy-ctrl-z () {
   if [[ $#BUFFER -eq 0 ]]; then
     bg
@@ -114,16 +100,11 @@ zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 export EDITOR="vim"
 export SHELL="zsh"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/android-sdk/platform-tools" # Add RVM to PATH for scripting
-export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$HOME/.cargo/bin:$PATH"
-#export JAVA_HOME=$(/usr/libexec/java_home)
-#export JDK_HOME=$(/usr/libexec/java_home)
-#export NVM_DIR=~/.nvm
-  #source $(brew --prefix nvm)/nvm.sh
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# fnm
+export PATH=/home/ramonh/.fnm:$PATH
+eval "`fnm env --multi`"
