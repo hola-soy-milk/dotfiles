@@ -17,7 +17,7 @@
 	excludesfile = ~/.gitignore
 	editor = vim
 [user]
-	name = Ramon Huidobro
-	email = hola@ramonhuidobro.com
+	name = Ramón Huidobro
+	email = hola@ramonh.dev
 [github]
 	user = ramonh
