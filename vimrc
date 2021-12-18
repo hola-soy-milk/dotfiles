@@ -221,6 +221,6 @@ let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 highlight Comment cterm=italic
 
-let g:ale_linters = { 'javascript': ['eslint'], 'typescript': ['tslint'] }
-let g:ale_fixers = { 'javascript': ['prettier']}
+let g:ale_linters = { 'js': ['eslint'], 'javascript': ['eslint'], 'typescript': ['tslint'] }
+let g:ale_fixers = { 'tsx': ['prettier'], 'ts': ['prettier'],'js': ['prettier'],'javascript': ['prettier']}
 let g:ale_fix_on_save = 1
