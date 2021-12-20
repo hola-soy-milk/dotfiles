@@ -47,7 +47,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby brew cp tmux tmuxinator rake rvm coffee gem git-extras jsontools node osx sudo common-aliases)
+plugins=(git ruby brew cp tmux tmuxinator rake rvm coffee gem git-extras jsontools node macos sudo common-aliases)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -126,9 +126,10 @@ if [ -f '/Users/ramonh/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ramonh/g
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ramonh/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ramonh/google-cloud-sdk/completion.zsh.inc'; fi
-export ANDROID_HOME="/usr/local/share/android-sdk"
+export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+eval "$(fnm env --multi)"
