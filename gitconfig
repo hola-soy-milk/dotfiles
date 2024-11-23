@@ -17,10 +17,10 @@
 	excludesfile = ~/.gitignore
 	editor = vim
 [user]
-	name = Ramón Huidobro
-	email = hola@ramonh.dev
+	name = Carmen Huidobro
+	email = hola@carmenh.dev
 [github]
-	user = ramonh
+	user = hola-soy-milk
 [pull]
 	rebase = false
 [init]
