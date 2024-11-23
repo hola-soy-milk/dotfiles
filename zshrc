@@ -1,4 +1,4 @@
-export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/ramonh/gsutil:/Users/ramonh/gsutil"
+export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/carmenh/gsutil:/Users/carmenh/gsutil"
 # Path to your oh-my-zsh installation.
  export ZSH=$HOME/.oh-my-zsh
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
@@ -122,10 +122,10 @@ export NVM_DIR=~/.nvm
 eval "$(rbenv init -)"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/ramonh/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ramonh/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/carmenh/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/carmenh/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/ramonh/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ramonh/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/carmenh/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/carmenh/google-cloud-sdk/completion.zsh.inc'; fi
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
